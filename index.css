@@ -1,0 +1,635 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Righteous&family=Playfair+Display:wght@700&family=Poppins:wght@600&family=Merriweather:wght@700&family=Source+Sans+Pro:wght@400;600&family=Roboto:wght@700&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav Styles */
+nav {
+    background-color: #efefef;
+    padding: 10px 30px;
+    border-bottom: solid thin #a6a4a4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav p, nav a {
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #004440;
+    font-weight: bold;
+    background-color: #c3c3c3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    padding: 10px 30px;
+    border-top: solid thin #c3c3c3;
+    font-weight: 200;
+    font-size: 0.9em;
+    position: sticky;
+    bottom: 0;
+    margin-top: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #004440;
+}
+
+footer a:hover {
+    color: #004440;
+}
+
+/* Splash Section */
+.splash {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.splash h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #004440;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.splash img {
+    border: 8px double #004440;
+    border-radius: 28px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 68, 64, 0.5), 
+                0 0 0 4px #a6a4a4;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.splash p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #004440;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+/* Specific styles for first and last paragraphs */
+.splash p:first-of-type {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 25px auto;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.splash p:last-of-type {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Thank You Page */
+.splash.thank-you {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash.thank-you h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #004440;
+    font-size: 3.5em;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.splash.thank-you p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.splash.thank-you a {
+    display: inline-block;
+    background-color: #004440;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.splash.thank-you a:hover {
+    background-color: #003330;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for Thank You Message */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.splash.thank-you h1,
+.splash.thank-you p,
+.splash.thank-you a {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.splash.thank-you p {
+    animation-delay: 0.2s;
+}
+
+.splash.thank-you a {
+    animation-delay: 0.4s;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 2px solid #004440;
+    border-bottom: 1px solid #a6a4a4;
+    margin: 30px 0;
+    width: 90%;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+/* Education Section */
+.education-section h2 {
+    font-family: 'Merriweather', serif;
+    color: #2C3E50;
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.education-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #004440;
+}
+
+.education-details {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.8;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-left: 4px solid #004440;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Honors and Awards Section */
+.honors-section h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #2C3E50;
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.honors-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #004440;
+}
+
+.honors-list {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.honors-list dt {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #004440;
+}
+
+.honors-list dd {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    font-size: 1em;
+}
+
+/* Skills Section */
+.skills-section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #2C3E50;
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.skills-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #004440;
+}
+
+.custom-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+}
+
+.custom-list li {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f8f9fa;
+    color: #004440;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid #004440;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.custom-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+/* Leadership and Experience Section */
+.experience-section h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #2C3E50;
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.experience-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #004440;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem 2rem;
+    padding: 0;
+}
+
+.experience-grid dt {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #004440;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-grid dt:hover {
+    transform: translateX(5px);
+}
+
+.experience-grid dt a {
+    color: #004440;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.experience-grid dt a:hover {
+    background-color: #004440;
+    color: white;
+}
+
+.experience-grid dd {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-left: 3px solid #004440;
+}
+
+/* Section Headings */
+section h2 {
+    font-family: 'Lato', sans-serif;
+    color: #004440;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styles */
+section p {
+    line-height: 1.6;
+    color: #444;
+}
+
+/* link styles */
+section a {
+    color: #004440;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+section a:hover {
+    color: #004440;
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    align-items: center;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin: 0;
+}
+
+/* Projects Section */
+.projects-section h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #2C3E50;
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.projects-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #004440;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    margin: 1rem 0;
+    align-items: start;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    overflow: hidden; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #004440;
+}
+
+.card h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #004440;
+    font-size: 1.3em;
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #004440;
+}
+
+.card .custom-list {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin: 0;
+}
+
+.card .custom-list li {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.card .custom-list li:before {
+    content: "•";
+    color: #004440;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 1200px) {
+    .three-col {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .three-col {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .splash p {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+    
+    .splash p:first-of-type {
+        font-size: 1.1em;
+    }
+    
+    form button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+/* Contact Page Styles */
+.one-col {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #004440;
+    box-shadow: 0 0 5px rgba(0, 68, 64, 0.2);
+}
+
+form button {
+    background-color: #004440;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #003330;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+/* Link Styles */
+.experience-grid dt a {
+    color: #004440;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.experience-grid dt a:hover {
+    background-color: #004440;
+    color: white;
+}
+
+/* LinkedIn Icon  */
+footer .fab.fa-linkedin {
+    font-size: 1.2em;
+    color: #004440;
+    transition: all 0.3s ease;
+}
+
+footer a:hover .fab.fa-linkedin {
+    color: #0A66C2;  
+    transform: scale(1.2);
+}

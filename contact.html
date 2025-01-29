@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Vick Kalavapalli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <p>Vick Kalavapalli</p>
+        <p><a href="index.html">About Vick Kalavapalli</a></p> <!-- Link to index.html -->
+    </nav>
+
+    <section>
+        <h1>Contact Vick Kalavapalli</h1>
+        <p>2167 McFarlin Ln &bull; 678-640-6585 &bull; Vrk38303@uga.edu</p>
+    </section>
+
+    <hr>
+
+    <div class="one-col">
+        <form method="POST" action="https://formsubmit.co/ca1e277893cc2b9c2293041fd58b4f2d">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <br><br>
+        
+            <!-- Hidden Field for Redirect -->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/cv/thankyou.html"> <!-- Redirect to contact.html -->
+            
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email address" required>
+            <br><br>
+        
+            <!-- Message Field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            <br><br>
+        
+            <!-- Submit Button -->
+            <button type="submit">Send</button>
+        </form>
+        
+        
+    </div>
+
+    <footer>
+        &copy; <a href="index.html">Vick Kalavapalli</a> <!-- Link back to index.html -->
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+            <i class="fab fa-linkedin"></i> <!-- Font Awesome LinkedIn icon -->
+        </a>
+    </footer>
+</body>
+</html>
